@@ -1,0 +1,13 @@
+{
+  "name": "PRbtn",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "PR作成ボタン作成",
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*/*/issues/*"],
+      "js": ["jquery-1.11.2.min.js","script.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
